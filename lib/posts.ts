@@ -28,10 +28,27 @@ export interface PostMeta {
   description: string;
   date: string;
   readingTime: string;
+  // Optional cover, e.g. "/images/blog/<slug>.webp". Without it the UI shows a branded placeholder.
+  image: string | null;
+  imageAlt: string;
 }
 
 export interface Post extends PostMeta {
   content: string;
+}
+
+// Maps parsed frontmatter + body to PostMeta. imageAlt falls back to the title so the
+// cover always has accessible text.
+function toPostMeta(slug: string, data: Record<string, string>, content: string): PostMeta {
+  return {
+    slug,
+    title: data.title,
+    description: data.description,
+    date: data.date,
+    readingTime: calcReadingTime(content),
+    image: data.image ?? null,
+    imageAlt: data.imageAlt ?? data.title,
+  };
 }
 
 export function getAllPosts(): PostMeta[] {
@@ -42,13 +59,7 @@ export function getAllPosts(): PostMeta[] {
       const slug = file.replace(".mdx", "");
       const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf-8");
       const { data, content } = matter(raw);
-      return {
-        slug,
-        title: data.title,
-        description: data.description,
-        date: data.date,
-        readingTime: calcReadingTime(content),
-      };
+      return toPostMeta(slug, data, content);
     })
     .sort((a, b) => (a.date > b.date ? -1 : 1));
 }
@@ -56,12 +67,5 @@ export function getAllPosts(): PostMeta[] {
 export function getPost(slug: string): Post {
   const raw = fs.readFileSync(path.join(POSTS_DIR, `${slug}.mdx`), "utf-8");
   const { data, content } = matter(raw);
-  return {
-    slug,
-    title: data.title,
-    description: data.description,
-    date: data.date,
-    readingTime: calcReadingTime(content),
-    content,
-  };
+  return { ...toPostMeta(slug, data, content), content };
 }

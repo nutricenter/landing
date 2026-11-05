@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PostCover from "@/components/PostCover";
 import { getAllPosts, getPost, formatDate } from "@/lib/posts";
 import { APP_REGISTER_URL } from "@/lib/config";
 
@@ -38,6 +39,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       authors: ["Jair Flores"],
+      // Share preview uses the post cover when it has one; otherwise the site-wide OG image.
+      ...(post.image && { images: [{ url: post.image, alt: post.imageAlt }] }),
     },
     twitter: {
       card: "summary_large_image",
@@ -64,6 +67,7 @@ export default async function PostPage({ params }: Props) {
     description: post.description,
     datePublished: post.date,
     url: `https://www.nutricenterapp.com/blog/${slug}`,
+    ...(post.image && { image: `https://www.nutricenterapp.com${post.image}` }),
     author: {
       "@type": "Person",
       name: "Jair Flores",
@@ -97,9 +101,16 @@ export default async function PostPage({ params }: Props) {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             {post.title}
           </h1>
-          <p className="text-lg text-gray-500 mb-10 pb-10 border-b border-gray-100">
+          <p className="text-lg text-gray-500 mb-10">
             {post.description}
           </p>
+          <PostCover
+            image={post.image}
+            alt={post.imageAlt}
+            sizes="(min-width: 768px) 720px, 100vw"
+            priority
+            className="mb-12"
+          />
           <article className="prose prose-gray prose-lg max-w-none">
             <MDXRemote source={post.content} />
           </article>

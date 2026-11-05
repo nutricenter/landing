@@ -83,6 +83,18 @@ date: "YYYY-MM-DD"
 ---
 ```
 
+Portada opcional:
+
+```mdx
+image: "/images/blog/<slug>.webp"
+imageAlt: "Descripción breve de lo que muestra la imagen"
+```
+
+- Las portadas viven en `public/images/blog/` y se nombran con el slug del post.
+- Formato 16:9, idealmente 1600×900 px, en `.webp` o `.jpg`, liviana (menos de 300 KB).
+- Sin `image`, la card y el post muestran un placeholder con la marca. Sin `imageAlt`, se usa el título.
+- La portada también se usa como imagen al compartir el post en redes y en el Schema.org del artículo.
+
 Reglas:
 
 - El slug sale del nombre del archivo.
