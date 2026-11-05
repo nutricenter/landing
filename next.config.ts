@@ -4,14 +4,15 @@ const nextConfig: NextConfig = {
   // Rewrites: serve English-named pages at Spanish URLs (canonical = Spanish)
   async rewrites() {
     return [
-      { source: "/nosotros", destination: "/about" },
       { source: "/contacto", destination: "/contact" },
     ];
   },
-  // Redirects: prevent /about and /contact from being indexed as duplicates
+  // Redirects: prevent /contact from being indexed as a duplicate, and send the
+  // removed about page (/nosotros, /about) to the home page instead of a 404.
   async redirects() {
     return [
-      { source: "/about", destination: "/nosotros", permanent: true },
+      { source: "/nosotros", destination: "/", permanent: true },
+      { source: "/about", destination: "/", permanent: true },
       { source: "/contact", destination: "/contacto", permanent: true },
     ];
   },

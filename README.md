@@ -29,7 +29,6 @@ app/
 ├── blog/
 │   ├── page.tsx          # Blog index
 │   └── [slug]/page.tsx   # Individual post
-├── nosotros/page.tsx     # Founder page
 ├── contacto/page.tsx     # Contact page
 ├── sitemap.ts            # Auto-generated sitemap.xml
 └── robots.ts             # robots.txt

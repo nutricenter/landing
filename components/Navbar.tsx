@@ -21,9 +21,6 @@ export default function Navbar() {
           <Link href="/blog" className="text-white/60 hover:text-white text-sm transition-colors">
             Blog
           </Link>
-          <Link href="/nosotros" className="text-white/60 hover:text-white text-sm transition-colors">
-            Nosotros
-          </Link>
           <a href={APP_URL} className="text-white/60 hover:text-white text-sm transition-colors">
             Iniciar sesión
           </a>
@@ -69,9 +66,6 @@ export default function Navbar() {
         <div className="md:hidden border-t border-white/10 bg-dark px-6 py-4 flex flex-col gap-4">
           <Link href="/blog" className="text-white/70 hover:text-white text-sm transition-colors" onClick={() => setOpen(false)}>
             Blog
-          </Link>
-          <Link href="/nosotros" className="text-white/70 hover:text-white text-sm transition-colors" onClick={() => setOpen(false)}>
-            Nosotros
           </Link>
           <a href={APP_URL} className="text-white/70 hover:text-white text-sm transition-colors">
             Iniciar sesión
