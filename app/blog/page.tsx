@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PostCover from "@/components/PostCover";
 import { getAllPosts, formatDate } from "@/lib/posts";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Blog — NutriCenter",
@@ -18,8 +19,9 @@ export const metadata: Metadata = {
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
-  twitter: { card: "summary_large_image", title: "Blog — NutriCenter" },
+  twitter: { card: "summary_large_image", title: "Blog — NutriCenter", images: [DEFAULT_OG_IMAGE.url] },
 };
 
 export default function BlogPage() {

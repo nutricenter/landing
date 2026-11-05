@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { DEFAULT_OG_IMAGE } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad — NutriCenter",
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
+  twitter: { card: "summary_large_image", title: "Política de Privacidad — NutriCenter", images: [DEFAULT_OG_IMAGE.url] },
 };
 
 export default function PrivacyPage() {

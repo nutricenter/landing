@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PostCover from "@/components/PostCover";
 import { getAllPosts, getPost, formatDate } from "@/lib/posts";
-import { APP_REGISTER_URL } from "@/lib/config";
+import { APP_REGISTER_URL, DEFAULT_OG_IMAGE } from "@/lib/config";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -26,6 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
   const url = `https://www.nutricenterapp.com/blog/${slug}`;
+  // Share preview uses the post cover when it has one; otherwise the site-wide OG image.
+  const shareImage = post.image
+    ? { url: post.image, width: 1600, height: 900, alt: post.imageAlt }
+    : DEFAULT_OG_IMAGE;
   return {
     title: `${post.title} — NutriCenter`,
     description: post.description,
@@ -39,13 +43,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       authors: ["Jair Flores"],
-      // Share preview uses the post cover when it has one; otherwise the site-wide OG image.
-      ...(post.image && { images: [{ url: post.image, alt: post.imageAlt }] }),
+      images: [shareImage],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [shareImage.url],
     },
   };
 }
