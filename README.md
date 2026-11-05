@@ -1,6 +1,6 @@
-# Lebenix Landing
+# NutriCenter Landing
 
-Landing page for [Lebenix](https://www.lebenix.com) — B2B SaaS platform for nutritionists in LATAM.
+Landing page for [Lebenix](https://www.nutricenterapp.com) — B2B SaaS platform for nutritionists in LATAM.
 
 ## Stack
 
