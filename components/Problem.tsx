@@ -1,4 +1,4 @@
-// Problem section — pain points that Lebenix solves
+// Problem section — pain points that NutriCenter solves
 const PROBLEMS = [
   {
     title: "Demasiadas apps",

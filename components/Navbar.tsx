@@ -12,8 +12,8 @@ export default function Navbar() {
     <nav className="fixed top-0 inset-x-0 z-50 bg-dark/95 backdrop-blur border-b border-white/5">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <Image src="/logo.png" alt="Lebenix" width={32} height={32} className="rounded-[9px]" />
-          <span className="text-white font-bold text-xl">Lebenix</span>
+          <Image src="/logo.png" alt="NutriCenter" width={32} height={32} className="rounded-[9px]" />
+          <span className="text-white font-bold text-xl">NutriCenter</span>
         </Link>
 
         {/* Desktop links */}

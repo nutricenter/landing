@@ -1,12 +1,18 @@
 // Dynamic OG image — auto-detected by Next.js, served at /opengraph-image
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-export const alt = "Lebenix — Software para nutricionistas en LATAM";
+export const alt = "NutriCenter — Software para nutricionistas en LATAM";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OgImage() {
+// Reads the logo from the repo instead of fetching it from the live domain, so the
+// image builds the same before and after DNS changes.
+export default async function OgImage() {
+  const logoData = await readFile(join(process.cwd(), "public/logo.png"));
+  const logoSrc = `data:image/png;base64,${logoData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -38,17 +44,20 @@ export default function OgImage() {
         {/* Logo + nombre */}
         <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 40 }}>
           <img
-            src="https://www.lebenix.com/logo.png"
+            src={logoSrc}
+            alt=""
             width={56}
             height={56}
             style={{ borderRadius: 14 }}
           />
-          <span style={{ color: "white", fontSize: 36, fontWeight: 700 }}>Lebenix</span>
+          <span style={{ color: "white", fontSize: 36, fontWeight: 700 }}>NutriCenter</span>
         </div>
 
         {/* Headline */}
         <div
           style={{
+            display: "flex",
+            flexDirection: "column",
             color: "white",
             fontSize: 54,
             fontWeight: 700,
@@ -57,7 +66,7 @@ export default function OgImage() {
             marginBottom: 24,
           }}
         >
-          Tu consulta nutricional,{" "}
+          <span>Tu consulta nutricional,</span>
           <span style={{ color: "#3BA58F" }}>toda en un solo lugar</span>
         </div>
 

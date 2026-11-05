@@ -4,15 +4,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Términos de Servicio — Lebenix",
+  title: "Términos de Servicio — NutriCenter",
   description:
-    "Condiciones de uso del software Lebenix para nutricionistas.",
-  alternates: { canonical: "https://www.lebenix.com/terminos" },
+    "Condiciones de uso del software NutriCenter para nutricionistas.",
+  alternates: { canonical: "https://www.nutricenterapp.com/terminos" },
   openGraph: {
-    title: "Términos de Servicio — Lebenix",
-    description: "Condiciones de uso del software Lebenix para nutricionistas.",
-    url: "https://www.lebenix.com/terminos",
-    siteName: "Lebenix",
+    title: "Términos de Servicio — NutriCenter",
+    description: "Condiciones de uso del software NutriCenter para nutricionistas.",
+    url: "https://www.nutricenterapp.com/terminos",
+    siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
@@ -45,18 +45,18 @@ export default function TermsPage() {
         <div className="prose prose-gray prose-lg max-w-none">
 
           <p>
-            Al crear una cuenta en Lebenix aceptas estos Términos de Servicio.
+            Al crear una cuenta en NutriCenter aceptas estos Términos de Servicio.
             Si no estás de acuerdo con alguna de estas condiciones, no uses el
             servicio.
           </p>
 
           <h2>1. El servicio</h2>
           <p>
-            Lebenix es un software de gestión clínica para nutricionistas que
+            NutriCenter es un software de gestión clínica para nutricionistas que
             incluye agenda de citas, perfil de pacientes, mediciones corporales,
             planes alimenticios e integraciones con servicios externos como Google
             Calendar. El acceso al servicio es a través de{" "}
-            <strong>app.lebenix.com</strong> y sus subdominios.
+            <strong>app.nutricenterapp.com</strong> y sus subdominios.
           </p>
 
           <h2>2. Cuentas y acceso</h2>
@@ -72,7 +72,7 @@ export default function TermsPage() {
           </p>
 
           <h2>3. Uso aceptable</h2>
-          <p>Te comprometes a usar Lebenix únicamente para:</p>
+          <p>Te comprometes a usar NutriCenter únicamente para:</p>
           <ul>
             <li>Gestionar tu práctica profesional como nutricionista.</li>
             <li>
@@ -98,7 +98,7 @@ export default function TermsPage() {
 
           <h2>4. Planes y facturación</h2>
           <p>
-            Lebenix ofrece planes Free, Pro y Business. El plan Free está
+            NutriCenter ofrece planes Free, Pro y Business. El plan Free está
             disponible sin costo. Los planes de pago se facturan mensualmente
             según el precio vigente al momento de la contratación.
           </p>
@@ -113,7 +113,7 @@ export default function TermsPage() {
           <p>
             Tú eres responsable de obtener el consentimiento de tus pacientes
             para el registro y tratamiento de su información de salud, de acuerdo
-            con la legislación de protección de datos de tu país. Lebenix actúa
+            con la legislación de protección de datos de tu país. NutriCenter actúa
             como procesador de datos en nombre de tu centro; el responsable del
             tratamiento eres tú como profesional de salud.
           </p>
@@ -128,7 +128,7 @@ export default function TermsPage() {
 
           <h2>7. Limitación de responsabilidad</h2>
           <p>
-            Lebenix es una herramienta de gestión y no reemplaza el criterio
+            NutriCenter es una herramienta de gestión y no reemplaza el criterio
             clínico del profesional de salud. No somos responsables de decisiones
             clínicas tomadas con base en la información registrada en el sistema.
           </p>
@@ -162,7 +162,7 @@ export default function TermsPage() {
           <h2>11. Contacto</h2>
           <p>
             Para cualquier consulta sobre estos términos escríbenos a{" "}
-            <a href="mailto:contacto@lebenix.com">contacto@lebenix.com</a>.
+            <a href="mailto:contacto@nutricenterapp.com">contacto@nutricenterapp.com</a>.
           </p>
         </div>
         </div>

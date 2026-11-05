@@ -1,10 +1,10 @@
-// Features section — four core capabilities of Lebenix
+// Features section — four core capabilities of NutriCenter
 const FEATURES = [
   {
     icon: "📅",
     title: "Agenda inteligente",
     description:
-      "Organiza tus consultas sin complicaciones. Vistas de semana, día y mes. Conecta con Google Calendar para sincronizar citas y generar enlaces de Google Meet — Lebenix solo accede al calendario propio que crea para la integración.",
+      "Organiza tus consultas sin complicaciones. Vistas de semana, día y mes. Conecta con Google Calendar para sincronizar citas y generar enlaces de Google Meet — NutriCenter solo accede al calendario propio que crea para la integración.",
   },
   {
     icon: "🫀",
@@ -35,7 +35,7 @@ export default function Features() {
             Todo lo que necesitas en un solo sistema
           </h2>
           <p className="text-lg text-gray-500">
-            Desde la agenda hasta el plan alimenticio, Lebenix cubre cada etapa
+            Desde la agenda hasta el plan alimenticio, NutriCenter cubre cada etapa
             de tu práctica.
           </p>
         </div>

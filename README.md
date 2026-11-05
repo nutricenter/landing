@@ -1,6 +1,6 @@
 # NutriCenter Landing
 
-Landing page for [Lebenix](https://www.nutricenterapp.com) — B2B SaaS platform for nutritionists in LATAM.
+Landing page for [NutriCenter](https://www.nutricenterapp.com) — B2B SaaS platform for nutritionists in LATAM.
 
 ## Stack
 
@@ -10,7 +10,7 @@ Landing page for [Lebenix](https://www.nutricenterapp.com) — B2B SaaS platform
 | Styling | Tailwind CSS v4 |
 | Blog | MDX via next-mdx-remote + gray-matter |
 | Font | DM Sans (matches the app) |
-| Deploy | Vercel → www.lebenix.com |
+| Deploy | Vercel → www.nutricenterapp.com |
 
 ## Getting started
 

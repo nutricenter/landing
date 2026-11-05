@@ -4,16 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad — Lebenix",
+  title: "Política de Privacidad — NutriCenter",
   description:
-    "Cómo Lebenix recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
-  alternates: { canonical: "https://www.lebenix.com/privacidad" },
+    "Cómo NutriCenter recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
+  alternates: { canonical: "https://www.nutricenterapp.com/privacidad" },
   openGraph: {
-    title: "Política de Privacidad — Lebenix",
+    title: "Política de Privacidad — NutriCenter",
     description:
-      "Cómo Lebenix recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
-    url: "https://www.lebenix.com/privacidad",
-    siteName: "Lebenix",
+      "Cómo NutriCenter recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
+    url: "https://www.nutricenterapp.com/privacidad",
+    siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
@@ -46,15 +46,15 @@ export default function PrivacyPage() {
         <div className="prose prose-gray prose-lg max-w-none">
 
           <p>
-            Lebenix (&ldquo;nosotros&rdquo;, &ldquo;nuestro&rdquo;) opera el software de gestión para
-            nutricionistas disponible en <strong>app.lebenix.com</strong> y sus subdominios.
+            NutriCenter (&ldquo;nosotros&rdquo;, &ldquo;nuestro&rdquo;) opera el software de gestión para
+            nutricionistas disponible en <strong>app.nutricenterapp.com</strong> y sus subdominios.
             Esta política describe qué información recopilamos, cómo la usamos y cómo
             la protegemos.
           </p>
 
           <h2>1. Información que recopilamos</h2>
           <p>
-            Al registrarte y usar Lebenix, recopilamos la siguiente información:
+            Al registrarte y usar NutriCenter, recopilamos la siguiente información:
           </p>
           <ul>
             <li>
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
               <strong>Datos de Google Calendar (opcional):</strong> si conectas tu
               cuenta de Google, accedemos a tu calendario para sincronizar citas y
               generar enlaces de Google Meet. Solo accedemos al calendario
-              &ldquo;Lebenix&rdquo; creado específicamente para la integración.
+              &ldquo;NutriCenter&rdquo; creado específicamente para la integración.
             </li>
             <li>
               <strong>Datos de uso:</strong> registros de acceso e información técnica
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
 
           <h2>4. Integración con Google Calendar</h2>
           <p>
-            El uso de Lebenix con Google Calendar está sujeto a la{" "}
+            El uso de NutriCenter con Google Calendar está sujeto a la{" "}
             <a
               href="https://policies.google.com/privacy"
               target="_blank"
@@ -136,11 +136,11 @@ export default function PrivacyPage() {
             >
               Política de Privacidad de Google
             </a>
-            . Lebenix accede a tu cuenta de Google únicamente para:
+            . NutriCenter accede a tu cuenta de Google únicamente para:
           </p>
           <ul>
-            <li>Crear y gestionar el calendario &ldquo;Lebenix&rdquo; en tu cuenta.</li>
-            <li>Sincronizar citas agendadas desde Lebenix.</li>
+            <li>Crear y gestionar el calendario &ldquo;NutriCenter&rdquo; en tu cuenta.</li>
+            <li>Sincronizar citas agendadas desde NutriCenter.</li>
             <li>Generar enlaces de Google Meet para consultas online.</li>
           </ul>
           <p>
@@ -173,7 +173,7 @@ export default function PrivacyPage() {
             <li>
               Solicitar la eliminación de tu cuenta y todos los datos asociados
               escribiéndonos a{" "}
-              <a href="mailto:contacto@lebenix.com">contacto@lebenix.com</a>.
+              <a href="mailto:contacto@nutricenterapp.com">contacto@nutricenterapp.com</a>.
             </li>
           </ul>
 
@@ -188,7 +188,7 @@ export default function PrivacyPage() {
           <p>
             Si tienes preguntas sobre esta política o sobre el manejo de tus datos,
             escríbenos a{" "}
-            <a href="mailto:contacto@lebenix.com">contacto@lebenix.com</a>.
+            <a href="mailto:contacto@nutricenterapp.com">contacto@nutricenterapp.com</a>.
           </p>
         </div>
         </div>

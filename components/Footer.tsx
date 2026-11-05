@@ -13,8 +13,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <Image src={logo} alt="Lebenix" width={28} height={28} className="rounded-[8px]" />
-              <span className="text-white font-bold text-lg">Lebenix</span>
+              <Image src={logo} alt="NutriCenter" width={28} height={28} className="rounded-[8px]" />
+              <span className="text-white font-bold text-lg">NutriCenter</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
               Software para nutricionistas en LATAM. Gestiona tu consulta desde un solo lugar.
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="border-t border-white/10 pt-6 text-xs flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-          <span>© {new Date().getFullYear()} Lebenix. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} NutriCenter. Todos los derechos reservados.</span>
           <div className="flex items-center gap-4">
             <Link href="/privacidad" className="hover:text-white transition-colors">
               Privacidad
@@ -57,7 +57,7 @@ export default function Footer() {
             <Link href="/terminos" className="hover:text-white transition-colors">
               Términos
             </Link>
-            <span>contacto@lebenix.com</span>
+            <span>contacto@nutricenterapp.com</span>
           </div>
         </div>
       </div>

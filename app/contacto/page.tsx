@@ -4,18 +4,18 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Contacto — Lebenix",
-  description: "Escríbenos para soporte, prensa o cualquier consulta sobre Lebenix.",
-  alternates: { canonical: "https://www.lebenix.com/contacto" },
+  title: "Contacto — NutriCenter",
+  description: "Escríbenos para soporte, prensa o cualquier consulta sobre NutriCenter.",
+  alternates: { canonical: "https://www.nutricenterapp.com/contacto" },
   openGraph: {
-    title: "Contacto — Lebenix",
-    description: "Escríbenos para soporte, prensa o cualquier consulta sobre Lebenix.",
-    url: "https://www.lebenix.com/contacto",
-    siteName: "Lebenix",
+    title: "Contacto — NutriCenter",
+    description: "Escríbenos para soporte, prensa o cualquier consulta sobre NutriCenter.",
+    url: "https://www.nutricenterapp.com/contacto",
+    siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Contacto — Lebenix" },
+  twitter: { card: "summary_large_image", title: "Contacto — NutriCenter" },
 };
 
 export default function ContactoPage() {
@@ -33,10 +33,10 @@ export default function ContactoPage() {
           Respondemos todos los mensajes — dudas, soporte o lo que necesites.
         </p>
         <a
-          href="mailto:contacto@lebenix.com"
+          href="mailto:contacto@nutricenterapp.com"
           className="text-2xl font-semibold text-primary hover:underline"
         >
-          contacto@lebenix.com
+          contacto@nutricenterapp.com
         </a>
       </main>
       <Footer />

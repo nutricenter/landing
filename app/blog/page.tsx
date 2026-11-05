@@ -6,19 +6,19 @@ import Footer from "@/components/Footer";
 import { getAllPosts, formatDate } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Blog — Lebenix",
+  title: "Blog — NutriCenter",
   description:
     "Recursos para nutricionistas en LATAM: práctica clínica, tecnología y gestión del consultorio.",
-  alternates: { canonical: "https://www.lebenix.com/blog" },
+  alternates: { canonical: "https://www.nutricenterapp.com/blog" },
   openGraph: {
-    title: "Blog — Lebenix",
+    title: "Blog — NutriCenter",
     description: "Recursos para nutricionistas en LATAM: práctica clínica, tecnología y gestión del consultorio.",
-    url: "https://www.lebenix.com/blog",
-    siteName: "Lebenix",
+    url: "https://www.nutricenterapp.com/blog",
+    siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Blog — Lebenix" },
+  twitter: { card: "summary_large_image", title: "Blog — NutriCenter" },
 };
 
 export default function BlogPage() {

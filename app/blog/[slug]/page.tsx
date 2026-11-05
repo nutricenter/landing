@@ -24,16 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } catch {
     return {};
   }
-  const url = `https://www.lebenix.com/blog/${slug}`;
+  const url = `https://www.nutricenterapp.com/blog/${slug}`;
   return {
-    title: `${post.title} — Lebenix`,
+    title: `${post.title} — NutriCenter`,
     description: post.description,
     alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.description,
       url,
-      siteName: "Lebenix",
+      siteName: "NutriCenter",
       locale: "es_419",
       type: "article",
       publishedTime: post.date,
@@ -63,7 +63,7 @@ export default async function PostPage({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    url: `https://www.lebenix.com/blog/${slug}`,
+    url: `https://www.nutricenterapp.com/blog/${slug}`,
     author: {
       "@type": "Person",
       name: "Jair Flores",
@@ -71,9 +71,9 @@ export default async function PostPage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Lebenix",
-      url: "https://www.lebenix.com",
-      logo: "https://www.lebenix.com/logo.png",
+      name: "NutriCenter",
+      url: "https://www.nutricenterapp.com",
+      logo: "https://www.nutricenterapp.com/logo.png",
     },
   };
 
@@ -108,7 +108,7 @@ export default async function PostPage({ params }: Props) {
               ¿Quieres llevar tu consulta al siguiente nivel?
             </p>
             <p className="text-gray-500 mb-5">
-              Lebenix es el software diseñado para nutricionistas en LATAM.
+              NutriCenter es el software diseñado para nutricionistas en LATAM.
             </p>
             <a
               href={APP_REGISTER_URL}

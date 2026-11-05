@@ -17,7 +17,7 @@ export default function Hero() {
           <span className="text-primary">toda en un solo lugar</span>
         </h1>
         <p className="text-xl text-white/70 max-w-2xl mx-auto mb-10">
-          Lebenix es una plataforma de gestión clínica para nutricionistas en
+          NutriCenter es una plataforma de gestión clínica para nutricionistas en
           LATAM. Pacientes, agenda, mediciones y planes alimenticios —
           sin saltar entre apps.
         </p>

@@ -1,8 +1,8 @@
-# Lebenix Landing
+# NutriCenter Landing
 
-Landing pública de Lebenix (`www.lebenix.com`): marketing, SEO y blog para nutricionistas en LATAM.
+Landing pública de NutriCenter (`www.nutricenterapp.com`): marketing, SEO y blog para nutricionistas en LATAM.
 
-La app vive en `app.lebenix.com`. Este repo prioriza claridad, velocidad, criterio editorial y cambios simples; no requiere la misma rigurosidad técnica que el frontend de la app.
+La app vive en `app.nutricenterapp.com`. Este repo prioriza claridad, velocidad, criterio editorial y cambios simples; no requiere la misma rigurosidad técnica que el frontend de la app.
 
 **Rule:** do not add `Co-Authored-By: Claude` to commits.
 
@@ -36,9 +36,16 @@ Branch naming: `feat/`, `fix/`, `hotfix/`, `chore/`, `test/`.
 
 ## Producto
 
-Lebenix es un SaaS de gestión clínica para nutricionistas en LATAM: pacientes, historial clínico, agenda, mediciones, planes alimenticios, alimentos, recetas, plantillas e integración opcional con Google Calendar.
+NutriCenter es un SaaS de gestión clínica para nutricionistas en LATAM: pacientes, historial clínico, agenda, mediciones, planes alimenticios, alimentos, recetas, plantillas e integración opcional con Google Calendar.
 
 No inventar funcionalidades que no existan.
+
+## Nombre y marca
+
+- La marca es **NutriCenter** (así, con C mayúscula). El nombre anterior del producto no se usa en ningún texto, URL, metadata ni código.
+- Dominio: `nutricenterapp.com` → landing en `www.`, app en `app.`, API en `api.`. Correo: `contacto@nutricenterapp.com`.
+- `app` es solo parte del dominio, nunca del slug: identificadores técnicos en kebab-case como `nutricenter-landing`, no `nutricenter-app-landing`. El repo en GitHub es `nutricenter/landing`, porque la organización ya pone el prefijo.
+- Usar `SITE_URL` y `APP_URL` de `lib/config.ts` en lugar de escribir el dominio a mano cuando sea posible.
 
 ## Voz Editorial
 
@@ -60,7 +67,7 @@ Evitar:
 - relleno genérico de marketing
 - cifras, estudios o datos inventados
 
-Lebenix debe aparecer como solución natural, no como interrupción publicitaria.
+NutriCenter debe aparecer como solución natural, no como interrupción publicitaria.
 
 ## Blog
 
@@ -83,14 +90,14 @@ Reglas:
 - Usar títulos claros, buscables y naturales.
 - Escribir para búsquedas reales de nutricionistas en LATAM.
 - Estructura recomendada: problema, contexto, recomendaciones y cierre.
-- Cerrar con mención breve a Lebenix y CTA suave hacia `https://app.lebenix.com/register`.
+- Cerrar con mención breve a NutriCenter y CTA suave hacia `https://app.nutricenterapp.com/register`.
 - Verificar datos, normas, estudios o recomendaciones clínicas específicas antes de escribirlos.
 
 ## SEO Mínimo
 
 - En posts, cuidar `title` y `description`.
 - El blog y sitemap se actualizan automáticamente.
-- En páginas nuevas, agregar `metadata` básica y canonical con `https://www.lebenix.com`.
+- En páginas nuevas, agregar `metadata` básica y canonical con `https://www.nutricenterapp.com`.
 
 ## Código
 

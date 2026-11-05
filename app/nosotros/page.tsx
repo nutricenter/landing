@@ -5,19 +5,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Nosotros — Lebenix",
+  title: "Nosotros — NutriCenter",
   description:
-    "La historia detrás de Lebenix y por qué fue construido para los nutricionistas en LATAM.",
-  alternates: { canonical: "https://www.lebenix.com/nosotros" },
+    "La historia detrás de NutriCenter y por qué fue construido para los nutricionistas en LATAM.",
+  alternates: { canonical: "https://www.nutricenterapp.com/nosotros" },
   openGraph: {
-    title: "Nosotros — Lebenix",
-    description: "La historia detrás de Lebenix y por qué fue construido para los nutricionistas en LATAM.",
-    url: "https://www.lebenix.com/nosotros",
-    siteName: "Lebenix",
+    title: "Nosotros — NutriCenter",
+    description: "La historia detrás de NutriCenter y por qué fue construido para los nutricionistas en LATAM.",
+    url: "https://www.nutricenterapp.com/nosotros",
+    siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Nosotros — Lebenix" },
+  twitter: { card: "summary_large_image", title: "Nosotros — NutriCenter" },
 };
 
 export default function NosotrosPage() {
@@ -34,10 +34,10 @@ export default function NosotrosPage() {
             Nosotros
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            La historia detrás de Lebenix
+            La historia detrás de NutriCenter
           </h1>
           <p className="text-white/60 text-lg leading-relaxed max-w-2xl">
-            Lebenix nació de una pregunta simple: ¿por qué los nutricionistas en LATAM
+            NutriCenter nació de una pregunta simple: ¿por qué los nutricionistas en LATAM
             tienen que saltar entre varias herramientas para hacer el trabajo que debería
             hacer una sola?
           </p>
@@ -83,7 +83,7 @@ export default function NosotrosPage() {
 
           {/* Story */}
           <div className="prose prose-gray prose-lg max-w-none">
-            <h2>Por qué Lebenix</h2>
+            <h2>Por qué NutriCenter</h2>
             <p>
               Decidí enfocarme en salud — y específicamente en nutrición — porque creo
               que es una de las ramas más importantes para el bienestar de las personas,
@@ -98,7 +98,7 @@ export default function NosotrosPage() {
               Perú, Colombia o México.
             </p>
             <p>
-              Lebenix es mi respuesta a eso. Un sistema diseñado desde cero para el
+              NutriCenter es mi respuesta a eso. Un sistema diseñado desde cero para el
               nutricionista en LATAM: agenda, perfil clínico, mediciones corporales y
               planes alimenticios — todo en un solo lugar.
             </p>
