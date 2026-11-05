@@ -9,9 +9,6 @@ export default function Hero() {
       <div className="absolute w-[280px] h-[280px] rounded-full bg-gold/6 top-16 right-10 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <span className="inline-block bg-primary/15 text-primary text-sm font-medium px-3 py-1 rounded-full mb-6">
-          En beta — sé de los primeros en usarlo
-        </span>
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
           Tu consulta nutricional,{" "}
           <span className="text-primary">toda en un solo lugar</span>
