@@ -28,7 +28,7 @@ export default function Navbar() {
             href={APP_REGISTER_URL}
             className="bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
-            Probar gratis
+            Crear cuenta gratis
           </a>
         </div>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
             href={APP_REGISTER_URL}
             className="bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
-            Probar gratis
+            Crear cuenta
           </a>
           <button
             onClick={() => setOpen((prev) => !prev)}

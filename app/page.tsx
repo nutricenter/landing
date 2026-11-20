@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import Features from "@/components/Features";
+import ProductShowcase from "@/components/ProductShowcase";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <Problem />
-        <Features />
+        <ProductShowcase />
         <CtaBanner />
       </main>
       <Footer />

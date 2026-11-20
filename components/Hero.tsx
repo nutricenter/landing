@@ -8,21 +8,21 @@ export default function Hero() {
       <div className="absolute w-[500px] h-[500px] rounded-full bg-primary/8 -bottom-40 -right-24 pointer-events-none" />
       <div className="absolute w-[280px] h-[280px] rounded-full bg-gold/6 top-16 right-10 pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+      <div className="max-w-6xl mx-auto text-center relative z-10">
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-          Tu consulta nutricional,{" "}
-          <span className="text-primary">toda en un solo lugar</span>
+          <span className="block">Del perfil clínico al plan alimenticio,</span>
+          <span className="block text-primary">todo en un solo lugar</span>
         </h1>
-        <p className="text-xl text-white/70 max-w-2xl mx-auto mb-10">
-          NutriCenter es una plataforma de gestión clínica para nutricionistas en
-          LATAM. Pacientes, agenda, mediciones y planes alimenticios —
-          sin saltar entre apps.
+        <p className="text-xl text-white/70 max-w-3xl mx-auto mb-10">
+          Organiza la información de cada paciente, registra sus mediciones,
+          sigue su evolución y crea planes alimenticios personalizados desde un
+          mismo lugar.
         </p>
         <a
           href={APP_REGISTER_URL}
           className="inline-block bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-4 rounded-xl transition-colors"
         >
-          Probar gratis
+          Crear cuenta gratis
         </a>
       </div>
     </section>

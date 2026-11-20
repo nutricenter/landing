@@ -66,8 +66,8 @@ export default async function OgImage() {
             marginBottom: 24,
           }}
         >
-          <span>Tu consulta nutricional,</span>
-          <span style={{ color: "#3BA58F" }}>toda en un solo lugar</span>
+          <span>Del perfil clínico al plan alimenticio,</span>
+          <span style={{ color: "#3BA58F" }}>todo en un solo lugar</span>
         </div>
 
         {/* Subtítulo */}

@@ -1,19 +1,19 @@
 // Problem section — pain points that NutriCenter solves
 const PROBLEMS = [
   {
-    title: "Demasiadas apps",
+    title: "Perfil fragmentado",
     description:
-      "Saltas entre WhatsApp, Excel, Google Calendar y otras herramientas para gestionar cada paciente.",
+      "Antecedentes, objetivos y notas quedan repartidos entre documentos, formularios y conversaciones.",
   },
   {
-    title: "Tiempo en administración",
+    title: "Evolución sin contexto",
     description:
-      "Pierdes horas en tareas administrativas en lugar de enfocarte en la atención clínica.",
+      "Las mediciones aisladas en hojas de cálculo dificultan comparar cambios y entender el progreso.",
   },
   {
-    title: "Información dispersa",
+    title: "Planes desconectados",
     description:
-      "El historial, mediciones y planes de cada paciente viven en lugares distintos y difíciles de consultar.",
+      "Crear cada plan en un archivo separado obliga a repetir trabajo y deja la planificación aislada del seguimiento.",
   },
 ];
 
@@ -22,12 +22,12 @@ export default function Problem() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Los nutricionistas merecen mejores herramientas
+          La información clínica pierde valor cuando está dispersa
         </h2>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
-          Hoy gestionas tu práctica con varias herramientas que no están diseñadas
-          para trabajar juntas. El resultado: tiempo perdido, errores evitables
-          y una imagen poco profesional frente a tus pacientes.
+          Si el perfil, las evaluaciones y los planes viven en herramientas
+          separadas, seguir la evolución del paciente toma más tiempo del
+          necesario.
         </p>
         <div className="grid md:grid-cols-3 gap-6 text-left">
           {PROBLEMS.map((problem) => (

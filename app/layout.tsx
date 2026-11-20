@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { SITE_URL } from "@/lib/config";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -7,28 +8,29 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
+const siteTitle = "NutriCenter — Software para nutricionistas en LATAM";
+const siteDescription =
+  "Organiza perfiles clínicos, registra mediciones y sigue la evolución de tus pacientes. Crea planes alimenticios con alimentos, recetas y plantillas.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nutricenterapp.com"),
-  title: "NutriCenter — Software para nutricionistas en LATAM",
-  description:
-    "Gestiona pacientes, agenda consultas, registra mediciones y crea planes alimenticios. Todo en un solo lugar.",
+  metadataBase: new URL(SITE_URL),
+  title: siteTitle,
+  description: siteDescription,
   alternates: {
-    canonical: "https://www.nutricenterapp.com",
+    canonical: SITE_URL,
   },
   openGraph: {
-    title: "NutriCenter — Software para nutricionistas en LATAM",
-    description:
-      "Gestiona pacientes, agenda consultas, registra mediciones y crea planes alimenticios. Todo en un solo lugar.",
-    url: "https://www.nutricenterapp.com",
+    title: siteTitle,
+    description: siteDescription,
+    url: SITE_URL,
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "NutriCenter — Software para nutricionistas en LATAM",
-    description:
-      "Gestiona pacientes, agenda consultas, registra mediciones y crea planes alimenticios. Todo en un solo lugar.",
+    title: siteTitle,
+    description: siteDescription,
   },
   verification: {
     google: "iFTF6GiinEMPcgm_SrwXOtlhpFc045_UgnM2cu5bSpQ",
@@ -39,9 +41,10 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "NutriCenter",
-  url: "https://www.nutricenterapp.com",
-  logo: "https://www.nutricenterapp.com/logo.png",
-  description: "Software de gestión clínica para nutricionistas en LATAM.",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  description:
+    "Software para nutricionistas en LATAM: perfil clínico, evaluaciones y planes alimenticios.",
   contactPoint: {
     "@type": "ContactPoint",
     email: "contacto@nutricenterapp.com",

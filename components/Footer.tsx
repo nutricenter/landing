@@ -17,7 +17,8 @@ export default function Footer() {
               <span className="text-white font-bold text-lg">NutriCenter</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
-              Software para nutricionistas en LATAM. Gestiona tu consulta desde un solo lugar.
+              Perfil clínico, evaluaciones y planes alimenticios para
+              nutricionistas en LATAM.
             </p>
           </div>
 
@@ -26,7 +27,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <span className="text-white font-semibold text-xs uppercase tracking-wider mb-1">Producto</span>
               <a href={APP_REGISTER_URL} className="hover:text-white transition-colors">
-                Probar gratis
+                Crear cuenta gratis
               </a>
               <a href={APP_URL} className="hover:text-white transition-colors">
                 Iniciar sesión
