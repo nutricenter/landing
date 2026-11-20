@@ -2,17 +2,17 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { DEFAULT_OG_IMAGE } from "@/lib/config";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Términos de Servicio — NutriCenter",
   description:
     "Condiciones de uso del software NutriCenter para nutricionistas.",
-  alternates: { canonical: "https://www.nutricenterapp.com/terminos" },
+  alternates: { canonical: `${SITE_URL}/terminos` },
   openGraph: {
     title: "Términos de Servicio — NutriCenter",
     description: "Condiciones de uso del software NutriCenter para nutricionistas.",
-    url: "https://www.nutricenterapp.com/terminos",
+    url: `${SITE_URL}/terminos`,
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",

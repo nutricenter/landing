@@ -5,17 +5,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PostCover from "@/components/PostCover";
 import { getAllPosts, formatDate } from "@/lib/posts";
-import { DEFAULT_OG_IMAGE } from "@/lib/config";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Blog — NutriCenter",
   description:
     "Recursos para nutricionistas en LATAM: práctica clínica, tecnología y gestión del consultorio.",
-  alternates: { canonical: "https://www.nutricenterapp.com/blog" },
+  alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
     title: "Blog — NutriCenter",
     description: "Recursos para nutricionistas en LATAM: práctica clínica, tecnología y gestión del consultorio.",
-    url: "https://www.nutricenterapp.com/blog",
+    url: `${SITE_URL}/blog`,
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",

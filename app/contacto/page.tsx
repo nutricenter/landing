@@ -2,16 +2,16 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { DEFAULT_OG_IMAGE } from "@/lib/config";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Contacto — NutriCenter",
   description: "Escríbenos para soporte, prensa o cualquier consulta sobre NutriCenter.",
-  alternates: { canonical: "https://www.nutricenterapp.com/contacto" },
+  alternates: { canonical: `${SITE_URL}/contacto` },
   openGraph: {
     title: "Contacto — NutriCenter",
     description: "Escríbenos para soporte, prensa o cualquier consulta sobre NutriCenter.",
-    url: "https://www.nutricenterapp.com/contacto",
+    url: `${SITE_URL}/contacto`,
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",

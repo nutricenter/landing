@@ -2,18 +2,18 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { DEFAULT_OG_IMAGE } from "@/lib/config";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad — NutriCenter",
   description:
     "Cómo NutriCenter recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
-  alternates: { canonical: "https://www.nutricenterapp.com/privacidad" },
+  alternates: { canonical: `${SITE_URL}/privacidad` },
   openGraph: {
     title: "Política de Privacidad — NutriCenter",
     description:
       "Cómo NutriCenter recopila, usa y protege la información de tus pacientes y tu centro nutricional.",
-    url: "https://www.nutricenterapp.com/privacidad",
+    url: `${SITE_URL}/privacidad`,
     siteName: "NutriCenter",
     locale: "es_419",
     type: "website",

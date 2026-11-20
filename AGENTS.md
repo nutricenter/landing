@@ -1,6 +1,6 @@
 # NutriCenter Landing
 
-Landing pública de NutriCenter (`www.nutricenterapp.com`): marketing, SEO y blog para nutricionistas en LATAM.
+Landing pública de NutriCenter (`nutricenterapp.com`): marketing, SEO y blog para nutricionistas en LATAM.
 
 La app vive en `app.nutricenterapp.com`. Este repo prioriza claridad, velocidad, criterio editorial y cambios simples; no requiere la misma rigurosidad técnica que el frontend de la app.
 
@@ -43,7 +43,7 @@ No inventar funcionalidades que no existan.
 ## Nombre y marca
 
 - La marca es **NutriCenter** (así, con C mayúscula). El nombre anterior del producto no se usa en ningún texto, URL, metadata ni código.
-- Dominio: `nutricenterapp.com` → landing en `www.`, app en `app.`, API en `api.`. Correo: `contacto@nutricenterapp.com`.
+- Dominio: `nutricenterapp.com` → landing en el dominio raíz (`www.` redirige al raíz), app en `app.`, API en `api.`. Correo: `contacto@nutricenterapp.com`.
 - `app` es solo parte del dominio, nunca del slug: identificadores técnicos en kebab-case como `nutricenter-landing`, no `nutricenter-app-landing`. El repo en GitHub es `nutricenter/landing`, porque la organización ya pone el prefijo.
 - Usar `SITE_URL` y `APP_URL` de `lib/config.ts` en lugar de escribir el dominio a mano cuando sea posible.
 
@@ -109,7 +109,7 @@ Reglas:
 
 - En posts, cuidar `title` y `description`.
 - El blog y sitemap se actualizan automáticamente.
-- En páginas nuevas, agregar `metadata` básica y canonical con `https://www.nutricenterapp.com`.
+- En páginas nuevas, agregar `metadata` básica y canonical con `https://nutricenterapp.com`.
 
 ## Código
 
